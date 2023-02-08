@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #000000;
+}
+
+body {
+	background: linear-gradient(30.11deg, #ee7753, #e73c7f, #23a6d5, #23d5ac);
+	background-size: 350% 350%;
+	animation: gradient 19.88s ease infinite;
+	height: 100vh;
+}
+
+.main-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	.main-logo img {
+		width: 90%;
+	}
+}
