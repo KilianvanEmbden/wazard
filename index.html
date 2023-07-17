@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+  <nav role="navigation" class="navbar">
+    <ul>
+      <li><a aria-label="Join us" class="navbar__item" href="">Join us</a></li>
+      <li><a aria-label="about the services" class="navbar__item" href="">Services</a></li>
+      <li><a aria-label="contact us link" class="navbar__item" href="">Contact us</a></li>
+
+      <li><button id="changeColor" tabindex=0 aria-label="Toggle color mode" class="navbar__button" role="interaction" onclick="toggleTheme()" title="colorblind mode">Color assist</button></li>
+      <li><button id="changeFontSize" tabindex=0 aria-label="Change font size" class="navbar__button" role="interaction" onclick="changeFontSize()" title="fontsize toggle">NL/ENG</button></li>
+    </ul>
+  </nav>
+
 	<figure class="main-logo">
 		<img src="./img/WIZARD-LOGO-LAAG.svg" alt="Wizard logo">
 	</figure>

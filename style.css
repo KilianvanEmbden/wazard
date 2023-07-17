@@ -1,4 +1,6 @@
 * {
+	font-size: 62.5%;
+    box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
@@ -14,6 +16,28 @@ body {
 	height: 100vh;
 }
 
+/* Navigation */
+.navbar{
+    background-color: var(--text-color);
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.navbar__item::before {
+	transform: translateX(-50%);
+	border-radius: 100%;
+	position: absolute;
+	background: blue;
+	bottom: 10px;
+	height: 8px;
+	content: '';
+	width: 8px;
+	left: 50%;
+	display: none;
+  }
+
+/* Main logo */
 .main-logo img {
   display: block;
   margin-left: auto;
@@ -33,7 +57,12 @@ body {
 	}
 }
 
+/* Accasability */
+a:focus-visible, img:focus-visible, p:focus-visible, input:focus-visible, select:focus-visible, button:focus-visible, h2:focus-visible, textarea:focus-visible{
+    border: 3px solid rgba(255, 255, 0, 0.9);
+}
 
+/* Responsive */
 @media only screen and (max-width: 600px) {
 	.main-logo img {
 		width: 90%;
