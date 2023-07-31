@@ -1,43 +1,112 @@
 * {
-	font-size: 62.5%;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-html {
-	background-color: #000000;
+html{
+    font-size: 62,5%;
 }
 
-body {
-	background: linear-gradient(30.11deg, #ee7753, #e73c7f, #23a6d5, #23d5ac);
-	background-size: 350% 350%;
-	animation: gradient 19.88s ease infinite;
-	height: 100vh;
+:root{
+    --charcoal: rgba(53, 53, 53, 1);
+    --dark-blue: rgba(53, 53, 83, 0.8);
+    --button: rgba(53, 53, 83, 1);
+    --platinum: #F0F0F0;
+    --text-color: rgba(17, 34, 51, 0.9);
+	--green-blue-crayola: rgba(0, 141, 213, 1);
+	--orange: rgba(228, 87, 46, 1);
+	--rose: rgba(245, 100, 118, 1);
+	--bg-color: rgba(226, 226, 226, 1);
+}
+
+h1{
+	font-size: 2.2rem;
+	font-weight: 700;
+	line-height: 2.8rem;
+	color: var(--text-color);
+}
+
+p{
+	font-size: 1.2rem;
+	font-weight: 100;
+	line-height: 1.5rem;
+	color: var(--text-color);
+}
+
+section{
+	padding: 1.5rem 10vw 0 10vw;
+	min-height: 80vh;
+	border-bottom: 0.5rem solid var(--bg-color);
 }
 
 /* Navigation */
-.navbar{
-    background-color: var(--text-color);
-    width: 100%;
-    position: fixed;
-    overflow: hidden;
+.navbar {
+	position: fixed;
+	width: 100%;
+	font-size: 1.2rem;
+	overflow: hidden;
+	background-color: var(--dark-blue);
 }
 
-.navbar__item::before {
-	transform: translateX(-50%);
-	border-radius: 100%;
+.navbar li {
+	list-style-type: none;
+	margin: 1.4rem;
+	float: left;
+}
+.navbar .float-right {
+	float: right;
+}
+.dot{
+	padding-top: 3px;
+	position: relative;
+	left: calc(50% - 3px);
+	pointer-events: none
+}
+.dot::after{
+	content: "";
+	width: 6px;
+	height: 6px;
+	background-color: var(--bg-color);
 	position: absolute;
-	background: blue;
-	bottom: 10px;
-	height: 8px;
-	content: '';
-	width: 8px;
-	left: 50%;
-	display: none;
-  }
+	border-radius: 50%;
+	opacity: 0;
+}
 
-/* Main logo */
+.navbar li:hover > .dot::after{
+	opacity: 1;
+	transition-duration: 100ms;
+}
+
+.navbar li a {
+	padding: 1.8rem;
+	text-decoration: none;
+	color: var(--platinum);
+	font-weight: 400;
+}
+
+.navbar button{
+	padding: 0.3rem;
+	text-align: center;
+	text-decoration: none;
+	background-color: var(--bg-color);
+	border-radius: 0.3em;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Sections */
+article{
+	margin: 1.5rem;
+}
+
+.section--banner {
+	background: linear-gradient(30.11deg, var(--orange), var(--rose), var(--green-blue-crayola), var(--platinum));
+	background-size: 350% 350%;
+	animation: gradient 19.88s ease infinite;
+}
+
 .main-logo img {
   display: block;
   margin-left: auto;

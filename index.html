@@ -9,19 +9,27 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  <nav role="navigation" class="navbar">
+  <nav  class="navbar">
     <ul>
-      <li><a aria-label="Join us" class="navbar__item" href="">Join us</a></li>
-      <li><a aria-label="about the services" class="navbar__item" href="">Services</a></li>
-      <li><a aria-label="contact us link" class="navbar__item" href="">Contact us</a></li>
+      <li><a aria-label="Join us" class="navbar__item" href="">Join us</a><div class="dot"></div></li>
+      <li><a aria-label="about the services" class="navbar__item" href="">Services</a><div class="dot"></div></li>
+      <li><a aria-label="contact us link" class="navbar__item" href="">Contact us</a><div class="dot"></div></li>
 
-      <li><button id="changeColor" tabindex=0 aria-label="Toggle color mode" class="navbar__button" role="interaction" onclick="toggleTheme()" title="colorblind mode">Color assist</button></li>
-      <li><button id="changeFontSize" tabindex=0 aria-label="Change font size" class="navbar__button" role="interaction" onclick="changeFontSize()" title="fontsize toggle">NL/ENG</button></li>
+      <li class="float-right"><button id="changeColor" tabindex=0 aria-label="Toggle color mode" class="navbar__button" role="interaction" onclick="toggleTheme()" title="colorblind mode">Color assist</button></li>
+      <li class="float-right"><button id="changeFontSize" tabindex=0 aria-label="Change font size" class="navbar__button" role="interaction" onclick="changeFontSize()" title="fontsize toggle">NL/ENG</button></li>
     </ul>
   </nav>
-
-	<figure class="main-logo">
-		<img src="./img/WIZARD-LOGO-LAAG.svg" alt="Wizard logo">
-	</figure>
+  <section class="section--banner">
+    <figure class="main-logo">
+      <img src="./img/WIZARD-LOGO-LAAG.svg" alt="Wizard logo">
+    </figure>
+  </section>
+  <section class="section--article">
+    <article>
+      <h1>Welkom bij Wizard</h1>
+      <p>Wij zijn uw toonaangevende partner voor al uw IT-adviesbehoeften. Met een team van hooggekwalificeerde IT-consultants zijn we vastbesloten om uw bedrijf naar nieuwe digitale hoogten te brengen.</p>
+      <p>Bij Wizard begrijpen we dat elke organisatie uniek is. Daarom bieden we op maat gemaakte oplossingen die perfect zijn afgestemd op uw specifieke vereisten en doelstellingen. Of het nu gaat om het stroomlijnen van uw bedrijfsprocessen, het implementeren van  cybersecuritymaatregelen of het verbeteren van uw IT-infrastructuur, onze experts staan voor u klaar.</p>
+    </article>
+  </section>
   </body>
 </html>
