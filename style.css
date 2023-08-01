@@ -41,6 +41,10 @@ section{
 	border-bottom: 0.5rem solid var(--bg-color);
 }
 
+article{
+	margin: 1.5rem;
+}
+
 /* Navigation */
 .navbar {
 	position: fixed;
@@ -97,10 +101,7 @@ section{
 }
 
 /* Sections */
-article{
-	margin: 1.5rem;
-}
-
+/* Banner */
 .section--banner {
 	background: linear-gradient(30.11deg, var(--orange), var(--rose), var(--green-blue-crayola), var(--platinum));
 	background-size: 350% 350%;
@@ -112,6 +113,23 @@ article{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+/* Article with logo */
+.section--article{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.article-img{
+
+}
+
+.article-img img{
+	object-fit: contain;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
 }
 
 @keyframes gradient {
