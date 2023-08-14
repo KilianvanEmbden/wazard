@@ -11,7 +11,7 @@ html{
 
 :root{
     --charcoal: rgba(53, 53, 53, 1);
-    --dark-blue: rgba(53, 53, 83, 0.8);
+    --dark-blue: rgba(53, 53, 83, 0.9);
     --button: rgba(53, 53, 83, 1);
     --platinum: #F0F0F0;
     --text-color: rgba(17, 34, 51, 0.9);
@@ -54,37 +54,19 @@ article{
 	background-color: var(--dark-blue);
 }
 
-.navbar li {
-	list-style-type: none;
-	margin: 1.4rem;
-	float: left;
-}
 .navbar .float-right {
 	float: right;
 }
-.dot{
-	padding-top: 3px;
-	position: relative;
-	left: calc(50% - 3px);
-	pointer-events: none
-}
-.dot::after{
-	content: "";
-	width: 6px;
-	height: 6px;
-	background-color: var(--bg-color);
-	position: absolute;
-	border-radius: 50%;
-	opacity: 0;
-}
 
-.navbar li:hover > .dot::after{
-	opacity: 1;
+.navbar li {
+	list-style-type: none;
+	margin: 1.4rem 0.7rem;
+	float: left;
 	transition-duration: 100ms;
 }
 
 .navbar li a {
-	padding: 1.8rem;
+	padding: 0.7rem;
 	text-decoration: none;
 	color: var(--platinum);
 	font-weight: 400;
@@ -95,10 +77,43 @@ article{
 	text-align: center;
 	text-decoration: none;
 	background-color: var(--bg-color);
-	border-radius: 0.3em;
+	border-radius: 0.1em;
 	position: relative;
 	overflow: hidden;
 }
+
+.navbar	button:hover{
+	transition-duration: 200ms;
+}
+
+.dot{
+	padding-top: 3px;
+	position: relative;
+	left: calc(50% - 3px);
+	pointer-events: none
+}
+
+.dot::after{
+	content: "";
+	width: 6px;
+	height: 6px;
+	background-color: var(--bg-color);
+	box-shadow: 1px 1px 10px var(--platinum);
+	position: absolute;
+	border-radius: 50%;
+	transition-duration: 100ms;
+	opacity: 0;
+}
+
+.navbar li:not(:last-child):hover{
+	transform: translateY(-0.3rem);
+	transition-duration: 100ms;
+}
+.navbar li:hover > .dot::after{
+	opacity: 1;
+	transition-duration: 200ms;
+}
+
 
 /* Sections */
 /* Banner */
@@ -121,9 +136,6 @@ article{
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
-.article-img{
-
-}
 
 .article-img img{
 	object-fit: contain;
@@ -146,7 +158,7 @@ article{
 
 /* Accasability */
 a:focus-visible, img:focus-visible, p:focus-visible, input:focus-visible, select:focus-visible, button:focus-visible, h2:focus-visible, textarea:focus-visible{
-    border: 3px solid rgba(255, 255, 0, 0.9);
+    border: 3px solid white;
 }
 
 /* Responsive */
