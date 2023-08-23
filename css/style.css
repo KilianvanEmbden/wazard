@@ -71,6 +71,7 @@ article{
 	text-decoration: none;
 	color: var(--platinum);
 	font-weight: 400;
+	cursor: pointer;
 }
 
 .navbar button{
@@ -82,6 +83,7 @@ article{
 	border-radius: 0.1em;
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .navbar	button:hover{
@@ -162,13 +164,21 @@ article{
 
 /* Contact Form */
 .contact-container{
+	display: none;
 	position: fixed;
-	height: 50vh;
-	left: 50%;
 	top: 50%;
-	width: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 25rem;
 	background-color: var(--platinum);
 	box-shadow: 1px 1px 5px var(--dark-blue);
+}
+
+.contact-close-button{
+	float: right;
+	margin: 0.3rem;
+	padding: 0.6rem;
+	cursor: pointer;
 }
 
 form{
@@ -178,7 +188,7 @@ form{
 input, textarea {
 	width: 100%;
 	min-height: 2.6rem;
-	max-height: 6rem;
+	max-height: 10rem;
 	padding: 0.6rem;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -198,7 +208,8 @@ input, textarea {
   
   input[type=submit]:hover {
 	color: var(--text-color);
-	background-color: var(--platinum);
+	background-color: var(--bg-color);
+	border: 1px solid var(--text-color);
 	transition-duration: 200ms;
   }
 

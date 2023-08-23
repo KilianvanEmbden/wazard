@@ -7,6 +7,7 @@
     <title>Wizard</title>
 	<link rel="icon" type="image/x-icon" href="../img/WIZARD-ICON.png">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js"></script> 
   </head>
 <body>
 <nav  class="navbar">
@@ -14,7 +15,7 @@
         <li><a aria-label="Home page" class="navbar__item" href="../index.html">Wizard</a><div class="dot"></div></li>
         <li><a aria-label="Wat voor oplossingen" class="navbar__item" href="oplossingen.html">Oplossingen</a><div class="dot"></div></li>
         <li><a aria-label="Leer over onze diensten" class="navbar__item selected" href="diensten.html">Diensten</a><div class="dot"></div></li>
-        <li><a aria-label="neem contact op" class="navbar__item" href="">Contact</a><div class="dot"></div></li>
+        <li><a aria-label="neem contact op" class="navbar__item contact__button">Contact</a><div class="dot"></div></li>
 
         <li class="float-right"><button id="changeLanguage" tabindex=0 aria-label="Change language" class="navbar__button" role="interaction" onclick="changeLanguage()" title="Language toggle">NL/ENG</button></li>
     </ul>
@@ -31,5 +32,20 @@
             </figure>
         </article>
     </section>
+    <div class="contact-container">
+        <button class="contact-close-button"onclick="hideContact()">X</button>
+        <form action="/action_page.php">
+          <label for="name">Naam</label>
+          <input type="text" id="name" name="name" placeholder="Uw naam...">
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Uw e-mailadres..">
+      
+          <label for="subject">Vraag / Bericht</label>
+          <textarea id="subject" name="subject" placeholder="Stuur ons een bericht.."></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
   </body>
 </html>
