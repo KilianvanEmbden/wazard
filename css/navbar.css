@@ -1,0 +1,77 @@
+.navbar {
+	position: fixed;
+	width: 100%;
+	font-size: 1.1rem;
+	overflow: hidden;
+	background-color: var(--dark-blue);
+}
+
+.navbar .float-right {
+	float: right;
+}
+
+.navbar li {
+	list-style-type: none;
+	margin: 1.1rem 0.7rem;
+	float: left;
+	transition-duration: 100ms;
+}
+
+.navbar li a {
+	letter-spacing: 0.05rem;
+	padding: 1.1rem 0.5rem;
+	text-decoration: none;
+	color: var(--platinum);
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.navbar .menu__button{
+    display: none;
+}
+
+.navbar button{
+	padding: 0.3rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--platinum);
+	background-color: var(--dark-blue);
+	border-radius: 0.1em;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.navbar	button:hover{
+	color: var(--text-color);
+	background-color: var(--platinum);
+	transition-duration: 200ms;
+}
+
+.dot{
+	padding-top: 3px;
+	position: relative;
+	left: calc(50% - 3px);
+	pointer-events: none
+}
+
+.dot::after{
+	content: "";
+	width: 6px;
+	height: 6px;
+	background-color: var(--bg-color);
+	box-shadow: 1px 1px 10px var(--platinum);
+	position: absolute;
+	border-radius: 50%;
+	transition-duration: 100ms;
+	opacity: 0;
+}
+
+.navbar li:not(:last-child):hover{
+	transform: translateY(-0.2rem);
+	transition-duration: 100ms;
+}
+.navbar li:hover > .dot::after{
+	opacity: 1;
+	transition-duration: 200ms;
+}

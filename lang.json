@@ -1,0 +1,38 @@
+{
+"NL": {
+    "nav": {
+        "li1": "Oplossingen",
+        "li2": "Diensten",
+        "li3": "Contact"
+    },
+    "art1": {
+        "title": "Welkom bij Wizard",
+        "p1": "Wij zijn een gedreven IT-consultancybedrijf met een missie: het bieden van oplossingen voor al uw IT-uitdagingen. Al sinds 1995zetten we ons in voor het begrijpen en implementeren van baanbrekende technologieën. Ons toegewijde team van IT-consultants staatklaar om te bouwen aan innovatieve oplossingen en om uw bedrijfsprocessen te optimaliseren, ongeacht de omvang van het project.",
+        "p2": "Bij Wizard begrijpen we dat elke organisatie een uniek verhaal heeft. Daarom stellen we op maat gemaakte oplossingen voor dienaadloos aansluiten op uw specifieke behoeften en doelen. Of het nu gaat om het optimaliseren van uw bedrijfsprocessen, het versterkenvan uw cyberbeveiliging of het perfectioneren van uw IT-infrastructuur, onze toegewijde experts staan paraat.",
+        "p3": "Met een bewezen staat van dienst en diepgaande technische expertise, zijn we in staat om zowel omvangrijke als kleinereprojecten met succes te voltooien. We omarmen heldere communicatie en hechten enorm veel waarde aan een nauwe samenwerking met onzeklanten, ongeacht de omvang van het project. Uw succes is ons ultieme doel!"
+    },
+    "cont": {
+        "in1": "Naam",
+        "in2": "Email",
+        "in3": "Vraag / Bericht"
+    }
+}
+,"EN": {
+    "nav": {
+        "li1": "Solution",
+        "li2": "Services",
+        "li3": "Contact"
+    },
+    "art1": {
+        "title": "Welcome bij Wizard",
+        "p1": "We are a passionate IT consultancy firm dedicated to providing solutions for all your IT challenges. Since 1995, we have been engaged in the development and implementation of new technologies. With our team of IT consultants, we work towards solutions and improvements in business processes, whether they are large or small projects.",
+        "p2": "At Wizard, we understand that every organization has a unique story. That's why we offer tailor-made solutions that seamlessly align with your specific needs and goals. Whether it's streamlining your business processes, fortifying your cybersecurity, or perfecting your IT infrastructure, our dedicated experts are at your service.",
+        "p3": "With a proven track record and profound technical expertise, we have the ability to successfully complete both substantial and smaller projects. We embrace clear communication and place immense value on close collaboration with our clients, regardless of the project's size. Your success is our ultimate aim!"
+    },
+    "cont": {
+        "in1": "Name",
+        "in2": "Email",
+        "in3": "Question / Message"
+    }
+}
+}

@@ -22,6 +22,7 @@ html{
 }
 
 h1{
+	margin: 0.8rem 1.8rem;
 	font-size: 2.2rem;
 	font-weight: 700;
 	line-height: 2.8rem;
@@ -29,6 +30,7 @@ h1{
 }
 
 p{
+	margin: 0.2rem 1.8rem;
 	font-size: 1.2rem;
 	font-weight: 100;
 	line-height: 1.5rem;
@@ -36,118 +38,68 @@ p{
 }
 
 section{
-	padding: 1.5rem 10vw 0 10vw;
-	min-height: 80vh;
+	min-height: 70vh;
 	border-bottom: 0.5rem solid var(--bg-color);
 }
 
 article{
-	margin: 1.5rem;
+	margin: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 20rem;
+	max-width: 40rem;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-/* Navigation */
-.navbar {
-	position: fixed;
-	width: 100%;
-	font-size: 1.1rem;
-	overflow: hidden;
-	background-color: var(--dark-blue);
-}
-
-.navbar .float-right {
-	float: right;
-}
-
-.navbar li {
-	list-style-type: none;
-	margin: 1.1rem 0.7rem;
-	float: left;
-	transition-duration: 100ms;
-}
-
-.navbar li a {
-	letter-spacing: 0.05rem;
-	padding: 1.1rem 0.5rem;
-	text-decoration: none;
-	color: var(--platinum);
-	font-weight: 400;
-	cursor: pointer;
-}
-
-.navbar button{
-	padding: 0.3rem;
-	text-align: center;
-	text-decoration: none;
-	color: var(--platinum);
-	background-color: var(--dark-blue);
-	border-radius: 0.1em;
-	position: relative;
-	overflow: hidden;
-	cursor: pointer;
-}
-
-.navbar	button:hover{
-	color: var(--text-color);
-	background-color: var(--platinum);
-	transition-duration: 200ms;
-}
-
-.dot{
-	padding-top: 3px;
-	position: relative;
-	left: calc(50% - 3px);
-	pointer-events: none
-}
-
-.dot::after{
-	content: "";
-	width: 6px;
-	height: 6px;
-	background-color: var(--bg-color);
-	box-shadow: 1px 1px 10px var(--platinum);
-	position: absolute;
-	border-radius: 50%;
-	transition-duration: 100ms;
-	opacity: 0;
-}
-
-.navbar li:not(:last-child):hover{
-	transform: translateY(-0.2rem);
-	transition-duration: 100ms;
-}
-.navbar li:hover > .dot::after{
-	opacity: 1;
-	transition-duration: 200ms;
-}
-
 
 /* Sections */
+
 /* Banner */
-.section--banner {
+.section__banner {
+	height: 100vh;
 	background: linear-gradient(30.11deg, var(--orange), var(--rose), var(--green-blue-crayola), var(--platinum));
 	background-size: 350% 350%;
 	animation: gradient 19.88s ease infinite;
-}
-
-.main-logo img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-/* Article with logo */
-.section--article{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	place-items: center;
 }
 
+.banner__logo img {
+	width: 100%;
+	max-width: 50rem;
+}
 
-.article-img img{
-	object-fit: contain;
-	width: 500px;
-	height: 500px;
-	border-radius: 50%;
+/* Welcome article */
+.section__welcome{
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+}
+
+.article__img{
+	flex: 1 1 22rem;
+	max-width: 30rem;
+}
+
+.article__img img{
+	width: 100%;
+	height: 100%;
+}
+
+/* Buttons article */
+.section__buttons{
+	background-image: url("../img/WIZARD-CARD.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+    place-items: center;
+}
+
+.section__buttons div{
+	padding: 2rem;
+	background-color: white;
 }
 
 @keyframes gradient {
@@ -162,65 +114,7 @@ article{
 	}
 }
 
-/* Contact Form */
-.contact-container{
-	display: none;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 25rem;
-	background-color: var(--platinum);
-	box-shadow: 1px 1px 5px var(--dark-blue);
-}
-
-.contact-close-button{
-	float: right;
-	margin: 0.3rem;
-	padding: 0.6rem;
-	cursor: pointer;
-}
-
-form{
-	padding: 1.2rem;
-}
-
-input, textarea {
-	width: 100%;
-	min-height: 2.6rem;
-	max-height: 10rem;
-	padding: 0.6rem;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 0.2rem;
-	margin-bottom: 1rem;
-	resize: vertical;
-  }
-  
-  input[type=submit] {
-	color: var(--platinum);
-	background-color: var(--dark-blue);
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-	color: var(--text-color);
-	background-color: var(--bg-color);
-	border: 1px solid var(--text-color);
-	transition-duration: 200ms;
-  }
-
 /* Accasability */
 a:focus-visible, img:focus-visible, p:focus-visible, input:focus-visible, select:focus-visible, button:focus-visible, h2:focus-visible, textarea:focus-visible{
     border: 3px solid white;
-}
-
-/* Responsive */
-@media only screen and (max-width: 600px) {
-	.main-logo img {
-		width: 90%;
-	}
 }

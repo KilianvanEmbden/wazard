@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wizard</title>
-	<link rel="icon" type="image/x-icon" href="../img/WIZARD-ICON.png">
+  	<link rel="icon" type="image/x-icon" href="../img/WIZARD-ICON.png">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <script src="../js/main.js"></script> 
   </head>
-<body>
-<nav  class="navbar">
+  <body>
+  <nav  class="navbar">
     <ul>
-        <li><a aria-label="Home page" class="navbar__item" href="../index.html">Wizard</a><div class="dot"></div></li>
-        <li><a aria-label="Wat voor oplossingen" class="navbar__item" href="oplossingen.html">Oplossingen</a><div class="dot"></div></li>
-        <li><a aria-label="Leer over onze diensten" class="navbar__item selected" href="diensten.html">Diensten</a><div class="dot"></div></li>
-        <li><a aria-label="neem contact op" class="navbar__item contact__button">Contact</a><div class="dot"></div></li>
+      <li><a aria-label="Menu" class="navbar__item menu__button">Menu</a></li>
+      <li><a aria-label="Home page" class="navbar__item" href="../index.html">Wizard</a><div class="dot"></div></li>
+      <li><a aria-label="Wat voor oplossingen" class="navbar__item" href="oplossingen.html">Oplossingen</a><div class="dot"></div></li>
+      <li><a aria-label="Leer over onze diensten" class="navbar__item" href="diensten.html">Diensten</a><div class="dot"></div></li>
+      <li><a aria-label="neem contact op" class="navbar__item contact__button">Contact</a><div class="dot"></div></li>
 
-        <li class="float-right"><button id="changeLanguage" tabindex=0 aria-label="Change language" class="navbar__button" role="interaction" onclick="changeLanguage()" title="Language toggle">NL/ENG</button></li>
+      <li class="float-right"><button id="changeLanguage" tabindex=0 aria-label="Change language" class="navbar__button" role="interaction" onclick="changeLanguage()" title="Language toggle">NL/ENG</button></li>
     </ul>
-</nav>
-    <section class="section--article">
-        <article>
-            <figure class="main-logo">
-                <img src="../img/WIZARD-LOGO-HOOG.svg" alt="Wizard logo">
-            </figure>
-            <h1>Oplossingen</h1>
-            <p>Bij ons bent u verzekerd van een unieke en persoonlijke ervaring. Met trots kunnen we zeggen dat we een klein, maar zeer toegewijd team zijn. Het hart van ons bedrijf wordt gevormd door consultants en engineers die gepassioneerd zijn door technologie en gedreven zijn om maatwerkoplossingen te bieden die perfect aansluiten bij uw specifieke behoeften.</p>
-            <figure class="article-img">
-                <img src="../img/WIZARD-CARD.webp" alt="Wizard buisyness card">
-            </figure>
-        </article>
-    </section>
-    <div class="contact-container">
-        <button class="contact-close-button"onclick="hideContact()">X</button>
-        <form action="/action_page.php">
-          <label for="name">Naam</label>
-          <input type="text" id="name" name="name" placeholder="Uw naam...">
-      
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Uw e-mailadres..">
-      
-          <label for="subject">Vraag / Bericht</label>
-          <textarea id="subject" name="subject" placeholder="Stuur ons een bericht.."></textarea>
-      
-          <input type="submit" value="Submit">
-        </form>
-      </div>
+  </nav>
+  <section>
+    <figure class="banner__logo">
+      <img src="../img/WIZARD-LOGO-HOOG.svg" alt="Wizard logo">
+    </figure>
+  </section>
+  <section class="section__welcome">
+    <article id="art-1">
+      <h1>Welkom bij Wizard</h1>
+      <p>Wij zijn een kleinschalig IT-consultancybedrijf met een duidelijke missie: het bieden van oplossingen voor al uw IT-uitdagingen. Sinds 1995 zetten we ons in voor het begrijpen en implementeren van diverse technologieën. Onze kracht ligt in onze creatieve denkwijze en het vinden van maatwerkoplossingen voor elk bedrijf.</p>
+      <p>Bij Wizard begrijpen we dat elke organisatie een uniek verhaal heeft. Daarom stellen we op maat gemaakte oplossingen voor die naadloos aansluiten op uw specifieke behoeften en doelen. Of het nu gaat om het optimaliseren van uw bedrijfsprocessen, het versterken van uw cyberbeveiliging of het perfectioneren van uw IT-infrastructuur.</p>
+    </article>
+    <figure class="article__img .float-right">
+      <img src="../img/WIZARD-SHIRT.webp" alt="Woman wearing Wizard shirt">
+    </figure>
+  </section>
+  <div class="contact__container">
+    <button class="contact-close-button"onclick="hideContact()">X</button>
+    <form id="contact__form" >
+      <label for="name">Naam</label>
+      <input type="text" id="name" name="name" placeholder="Uw naam..">
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Uw e-mailadres..">
+  
+      <label for="subject">Vraag / Bericht</label>
+      <textarea id="subject" name="subject" placeholder="Stuur ons een bericht.."></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <footer>
+    <p>tekst</p>
+  </footer>
   </body>
 </html>

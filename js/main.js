@@ -1,16 +1,16 @@
 window.onload = function()
 {
     document.getElementsByClassName("contact__button")[0].addEventListener("click", showContact);
-    document.getElementById("contact-form").addEventListener("submit", submitContact(event));
+    document.getElementById("contact__form").addEventListener("submit", submitContact(event));
 }
 
 
 function showContact(){
-    document.getElementsByClassName("contact-container")[0].style.display = "block";
+    document.getElementsByClassName("contact__container")[0].style.display = "block";
 }
 
 function hideContact(){
-    document.getElementsByClassName("contact-container")[0].style.display = "none";
+    document.getElementsByClassName("contact__container")[0].style.display = "none";
 }
 
 function submitContact(event){
