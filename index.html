@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
@@ -9,20 +9,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/buttons.css">
     <script src="js/main.js"></script> 
   </head>
   <body>
 
   <nav  class="navbar">
     <ul>
-      <li><a aria-label="Menu" class="navbar__item menu__button">Menu</a></li>
-      <li><a aria-label="Home page" class="navbar__item" href="index.html">Wizard</a><div class="dot"></div></li>
+      <li><a aria-label="Menu" class="menu__button">Menu</a></li>
+      <li><a aria-label="Home page" href="index.html">Wizard</a><div class="dot"></div></li>
       <li><a aria-label="Wat voor oplossingen" class="navbar__item" href="pages/oplossingen.html">Oplossingen</a><div class="dot"></div></li>
       <li><a aria-label="Leer over onze diensten" class="navbar__item" href="pages/diensten.html">Diensten</a><div class="dot"></div></li>
       <li><a aria-label="neem contact op" class="navbar__item contact__button">Contact</a><div class="dot"></div></li>
 
-      <li class="float-right"><button id="changeLanguage" tabindex=0 aria-label="Change language" class="navbar__button" role="interaction" onclick="changeLanguage()" title="Language toggle">NL/ENG</button></li>
+      <li class="float-right"><button id="changeLanguage" tabindex=0 aria-label="Change language" class="navbar__item navbar__button" role="interaction" onclick="toggleLanguage()" title="Language toggle">NL/ENG</button></li>
     </ul>
   </nav>
 
@@ -33,11 +32,10 @@
   </section>
 
   <section class="section__welcome">
-    <article id="art-1">
+    <article class="article__item" id="art1">
       <h1>Welkom bij Wizard</h1>
-      <p>Wij zijn een kleinschalig IT-consultancybedrijf met een duidelijke missie: het bieden van oplossingen voor al uw IT-uitdagingen.</p>
+      <p>Wij zijn een kleinschalig IT-consultancybedrijf met een duidelijke missie: Het bieden van oplossingen voor al uw IT-uitdagingen.</p>
       <p> Wizard is in 1995 opgezet om audits af te nemen. Tegenwoordig werken wij aan het begrijpen en implementeren van diverse technologieën. Onze kracht ligt in onze creatieve denkwijze en het vinden van maatwerkoplossingen voor elke klus.</p>
-
       <p>Bij Wizard begrijpen we dat elke organisatie een uniek verhaal heeft. Daarom stellen we op maat gemaakte oplossingen voor die naadloos aansluiten op uw specifieke behoeften en doelen. Of het nu gaat om het optimaliseren van uw bedrijfsprocessen, het vergroten van toegankelijkheid of het perfectioneren van uw IT-infrastructuur.</p>
     </article>
     <figure class="article__img .float-right">
@@ -47,10 +45,10 @@
 
   <section class="section__buttons">
     <div>
-      <button>Advies</button>
-      <button>Automatisering</button>
-      <button class="button__design">Ontwerp</button>
-      <button>Toegankelijkheid</button>
+      <button aria-label="Contact about advice" class="button__example">Advies</button>
+      <button aria-label="Contact about automatisering" class="button__example">Automatisering</button>
+      <button aria-label="Contact about design" class="button__example">Ontwerp</button>
+      <button aria-label="Contact about accessibility" class="button__example">Toegankelijkheid</button>
     </div>
   </section>
 
@@ -62,12 +60,12 @@
   <div class="contact__container">
     <button class="button-contact-close"onclick="hideContact()">X</button>
     <form id="contact__form" >
-      <label for="name">Naam</label>
-      <input type="text" id="name" name="name" placeholder="Uw naam..">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Uw e-mailadres..">
-      <label for="subject">Vraag / Bericht</label>
-      <textarea id="subject" name="subject" placeholder="Stuur ons een bericht.."></textarea>
+      <label class="contact__item" for="name">Naam</label>
+      <input class="contact__item" type="text" id="name" name="name" placeholder="Uw naam..">
+      <label class="contact__item" for="email">Email</label>
+      <input class="contact__item" type="email" id="email" name="email" placeholder="Uw e-mailadres..">
+      <label class="contact__item" for="subject">Vraag / Bericht</label>
+      <textarea class="contact__item" id="subject" name="subject" placeholder="Stuur ons een bericht.."></textarea>
       <input type="submit" value="Submit">
     </form>
   </div>

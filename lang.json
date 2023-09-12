@@ -1,38 +1,54 @@
 {
-"NL": {
+"nl": {
     "nav": {
-        "li1": "Oplossingen",
-        "li2": "Diensten",
-        "li3": "Contact"
+        "0": "Oplossingen",
+        "1": "Diensten",
+        "2": "Contact",
+        "3": "NL"
     },
     "art1": {
-        "title": "Welkom bij Wizard",
-        "p1": "Wij zijn een gedreven IT-consultancybedrijf met een missie: het bieden van oplossingen voor al uw IT-uitdagingen. Al sinds 1995zetten we ons in voor het begrijpen en implementeren van baanbrekende technologieën. Ons toegewijde team van IT-consultants staatklaar om te bouwen aan innovatieve oplossingen en om uw bedrijfsprocessen te optimaliseren, ongeacht de omvang van het project.",
-        "p2": "Bij Wizard begrijpen we dat elke organisatie een uniek verhaal heeft. Daarom stellen we op maat gemaakte oplossingen voor dienaadloos aansluiten op uw specifieke behoeften en doelen. Of het nu gaat om het optimaliseren van uw bedrijfsprocessen, het versterkenvan uw cyberbeveiliging of het perfectioneren van uw IT-infrastructuur, onze toegewijde experts staan paraat.",
-        "p3": "Met een bewezen staat van dienst en diepgaande technische expertise, zijn we in staat om zowel omvangrijke als kleinereprojecten met succes te voltooien. We omarmen heldere communicatie en hechten enorm veel waarde aan een nauwe samenwerking met onzeklanten, ongeacht de omvang van het project. Uw succes is ons ultieme doel!"
+        "0": "Welkom bij Wizard",
+        "1": "Wij zijn een kleinschalig IT-consultancybedrijf met een duidelijke missie: Het bieden van oplossingen voor al uw IT-uitdagingen.",
+        "2": "Wizard is in 1995 opgezet om audits af te nemen. Tegenwoordig werken wij aan het begrijpen en implementeren van diverse technologieën. Onze kracht ligt in onze creatieve denkwijze en het vinden van maatwerkoplossingen voor elke klus.",
+        "3": "Bij Wizard begrijpen we dat elke organisatie een uniek verhaal heeft. Daarom stellen we op maat gemaakte oplossingen voor die naadloos aansluiten op uw specifieke behoeften en doelen. Of het nu gaat om het optimaliseren van uw bedrijfsprocessen, het vergroten van toegankelijkheid of het perfectioneren van uw IT-infrastructuur."
     },
     "cont": {
-        "in1": "Naam",
-        "in2": "Email",
-        "in3": "Vraag / Bericht"
+        "0": "Naam",
+        "1": "Uw naam..",
+        "2": "Email",
+        "3": "Uw Email..",
+        "4": "Vraag / Bericht",
+        "5": "Stuur ons een bericht..",
+        "adv": "Goeiedag, Ik was benieuwd naar het (IT) advies die jullie mij kunnen bieden. Ik hoor graag of jullie spoedig tijd hebben om mij hier over te contacteren. Met vriendelijke groet, [naam]",
+        "aut": "Goeiedag, Ik was benieuwd naar de automatiseringen die jullie realiseren. Ik hoor graag of jullie spoedig tijd hebben om mij hier over te contacteren. Met vriendelijke groet, [naam]",
+        "ont": "Goeiedag, Ik was benieuwd naar de ontwerpen die jullie kunnen maken voor mijn project. Ik hoor graag of jullie spoedig tijd hebben om mij hier over te contacteren. Met vriendelijke groet, [naam]",
+        "toe": "Goeiedag, Ik was benieuwd naar de verbeteringen in toegankelijkheid die jullie mij kunnen bieden. Ik hoor graag of jullie spoedig tijd hebben om mij hier over te contacteren. Met vriendelijke groet, [naam]"
     }
 }
-,"EN": {
+,"en": {
     "nav": {
-        "li1": "Solution",
-        "li2": "Services",
-        "li3": "Contact"
+        "0": "Solution",
+        "1": "Services",
+        "2": "Contact",
+        "3": "ENG"
     },
     "art1": {
-        "title": "Welcome bij Wizard",
-        "p1": "We are a passionate IT consultancy firm dedicated to providing solutions for all your IT challenges. Since 1995, we have been engaged in the development and implementation of new technologies. With our team of IT consultants, we work towards solutions and improvements in business processes, whether they are large or small projects.",
-        "p2": "At Wizard, we understand that every organization has a unique story. That's why we offer tailor-made solutions that seamlessly align with your specific needs and goals. Whether it's streamlining your business processes, fortifying your cybersecurity, or perfecting your IT infrastructure, our dedicated experts are at your service.",
-        "p3": "With a proven track record and profound technical expertise, we have the ability to successfully complete both substantial and smaller projects. We embrace clear communication and place immense value on close collaboration with our clients, regardless of the project's size. Your success is our ultimate aim!"
+        "0": "Welcome to Wizard",
+        "1": "We are a small-scale IT consultancy company with a clear mission: Providing solutions for all your IT challenges.",
+        "2": "Wizard was established in 1995 to conduct audits. Nowadays, we work on understanding and implementing various technologies. Our strength lies in our creative approach and finding customized solutions for every task.",
+        "3": "At Wizard, we understand that every organization has a unique story. That's why we offer tailor-made solutions that seamlessly align with your specific needs and goals. Whether it's optimizing your business processes, increasing accessibility, or perfecting your IT infrastructure."
     },
     "cont": {
-        "in1": "Name",
-        "in2": "Email",
-        "in3": "Question / Message"
+        "0": "Name",
+        "1": "Your name..",
+        "2": "Email",
+        "3": "Your Email..",
+        "4": "Question / Message",
+        "5": "Send us a message..",
+        "adv": "Good day, I was wondering about the (IT) advice you can provide me. I would appreciate it if you could contact me regarding this. Best regards, [name]",
+        "aut": "Good day, I was curious about the automations you implement. I would appreciate it if you could contact me soon to discuss this. Kind regards, [name]",
+        "ont": "Good day, I was interested in the designs you can create for my project. I would appreciate it if you could contact me soon to discuss this. Kind regards, [name]",
+        "toe": "Good day, I was curious about the accessibility improvements you can offer me. I would appreciate it if you could contact me soon to discuss this. Kind regards, [name]"
     }
 }
 }
