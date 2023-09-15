@@ -27,7 +27,7 @@ function updateLanguage(){
         throw new Error("Text not found.");
         }
         // Parse the response as JSON
-        console.log( response.json());
+        return response.json();
     })
     .then(translations => {
         // Now 'data' contains the parsed JSON data
