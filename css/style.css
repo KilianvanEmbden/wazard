@@ -98,8 +98,19 @@ article{
 }
 
 .section__buttons div{
+	margin-left: 4rem;
 	padding: 2rem;
-	background-color: white;
+}
+
+.section__buttons button{
+	padding: 0.5rem;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	opacity: 0.8;
+}
+.section__buttons button:hover{
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
 }
 
 @keyframes gradient {
