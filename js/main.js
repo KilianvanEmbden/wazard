@@ -19,7 +19,7 @@ function toggleLanguage(){
     }
 }
 
-function loadLanguage(){
+function updateLanguage(){
     fetch('lang.json')
     .then(response => {
         // Check if the response status is OK (status code 200)
@@ -29,10 +29,6 @@ function loadLanguage(){
         // Parse the response as JSON
         console.log( response.json());
     })
-}
-
-function updateLanguage(){
-    loadLanguage()
     .then(translations => {
         // Now 'data' contains the parsed JSON data
         var language = document.documentElement.lang;
