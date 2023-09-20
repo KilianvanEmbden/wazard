@@ -56,11 +56,16 @@ article{
 /* Sections */
 
 /* Banner */
-.section__banner {
+.section__banner__color {
 	height: 100vh;
 	background: linear-gradient(30.11deg, var(--orange), var(--rose), var(--green-blue-crayola), var(--platinum));
 	background-size: 350% 350%;
 	animation: gradient 19.88s ease infinite;
+	display: grid;
+	place-items: center;
+}
+
+.section__banner{
 	display: grid;
 	place-items: center;
 }
@@ -106,6 +111,10 @@ article{
 	cursor: pointer;
 	background: none;
 	border: none;
+	opacity: 0.6;
+}
+.section__buttons div button:hover{
+	opacity: 1;
 }
 
 @keyframes gradient {
