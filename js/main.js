@@ -66,6 +66,7 @@ function updateLanguage(){
       .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
       });
+    
 }
 
 function showContact(){
@@ -81,16 +82,16 @@ function fillContact(event){
     let subject = document.getElementById("subject");
     switch(buttName){
         case "Advies":
-            subject.value = data;
-            break;
-        case "Automatisering":
-            subject.value = data.NL.cont.aut;
+            subject.value = "Goeiedag, Ik was benieuwd naar het (IT) advies die jullie mij kunnen bieden. Ik hoor graag of jullie spoedig tijd hebben om mij hier over te contacteren. Met vriendelijke groet, [naam]";
             break;
         case "Ontwerp":
-            subject.value = data.NL.cont.ont;
+            subject.value = "Goeiedag, Ik was benieuwd naar de automatiseringen die jullie realiseren. Ik hoor graag of jullie spoedig tijd hebben om mij hier over te contacteren. Met vriendelijke groet, [naam]";
+            break;
+        case "Automatisering":
+            subject.value = "Goeiedag, Ik was benieuwd naar de ontwerpen die jullie kunnen maken voor mijn project. Ik hoor graag of jullie spoedig tijd hebben om mij hier over te contacteren. Met vriendelijke groet, [naam]";
             break;
         case "Toegankelijkheid":
-            subject.value = data.NL.cont.toe;
+            subject.value = "Goeiedag, Ik was benieuwd naar de verbeteringen in toegankelijkheid die jullie mij kunnen bieden. Ik hoor graag of jullie spoedig tijd hebben om mij hier over te contacteren. Met vriendelijke groet, [naam]";
             break;
     }
     showContact();
