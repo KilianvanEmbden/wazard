@@ -98,8 +98,14 @@ article{
 }
 
 .section__buttons div{
-	padding: 2rem;
-	background-color: white;
+	padding-left: 5.5rem;
+}
+
+.section__buttons div button{
+	padding: 0.2rem;
+	cursor: pointer;
+	background: none;
+	border: none;
 }
 
 @keyframes gradient {

@@ -20,7 +20,7 @@ function toggleLanguage(){
 }
 
 function updateLanguage(){
-    fetch('lang.json')
+    fetch('../lang.json')
     .then(response => {
         // Check if the response status is OK (status code 200)
         if (!response.ok) {
